@@ -1,0 +1,698 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main() {
+
+
+
+
+
+
+
+//1 m
+/*int a,b,c;
+
+ cout<<"a sonini: ";cin>>a;
+cout<<"b sonini: ";cin>>b;
+cout<<"c sonini: ";cin>>c;
+cout<<(a+b+c)/3.0;*/
+
+
+//5 m
+/*int a,b,c;
+cout<<"a sonini: ";cin>>a;
+cout<<"b sonini: ";cin>>b;
+cout<<"c sonini: ";cin>>c;
+a=b;
+b=c;
+c=a;
+cout<<"a soni: "<<a<<endl;
+cout<<"b soni: "<<b<<endl;
+cout<<"c soni: "<<c<<endl;
+*/
+
+//6 m
+/*int a;
+cout<<"a: ";
+cin >>a;
+cout <<"Natija: "<<a*a<<endl;
+*/
+
+//7 m
+/*float ussd;
+cout <<"ussd kiriting; ";
+cin >>ussd;
+int usd=11200;
+
+cout <<"Natija; "<<ussd/usd<<" $"<<endl;
+*/
+
+//8 m
+
+/*int a;
+cout <<"a; ";
+cin >>a;
+int r1=a%10;
+int r10=a/10%10;
+int r100=a/100%10;
+int r1000=a/1000%10;
+cout <<"Natija; "<<r10*r1000;
+*/
+
+//10
+/*int a;
+cout <<"a; ";
+cin >>a;
+int a3=a*a*a;
+int a7=a3*a3*a;
+cout<<"a⁷ darajasi; "<<a7;
+*/
+
+
+//11
+
+/*float l;
+cout <<"l uzunlikni kiriting: ";
+cin>>l;
+cout<<"Samtimetr "<<l<<"= Metr "<<l/100<<endl;
+cout<<"Samtimetr "<<l<<"= Metr "<<(int)(l/100)<<endl;
+*/
+
+//12
+/*int n;
+cout <<"3 xonali son kiriting: ";cin>>n;
+int r100=n/100%10;
+cout <<"Yuzliklar honasi "<<r100;
+*/
+
+//17
+
+    /* float n,k;
+     cout<<"n ";
+     cin  >>n;
+     k=n/1024;
+     cout <<n<<" bayt "<<k<<" kilobayt\n";
+     cout <<n<<" bayt "<<(int)(k)<<" kilobayt\n";*/
+
+//18
+
+/*
+
+int a,m,s;
+cout<<"Sekuda kiriting: ";cin>>a;
+   cout<<"\n\n";
+     m=a/60%60;
+    s=a%60;
+    cout<<m<<" min "<<s<<" sekund \n";
+   */
+
+//19
+/*int a,b,c;
+cout <<"a. ";cin >>a;
+cout <<"b. ";cin >>b;
+
+c=a;
+a=b;
+b=c;
+cout<<"a. "<<a<<"\nb. "<<b<<endl;
+*/
+
+//20
+/*int n;
+cout <<"n; ";cin>>n;
+if(n>999){
+int r100=n/100%10;
+
+cout <<"yuzlar xonasidagi raqam; "<<r100<<endl;
+}*/
+
+//22
+
+/*int a,b;
+cout <<"sutka : ";cin >>a;
+cout <<"soat: ";cin >>b;
+cout<<a*60*24+b*60<<" minut\n ";
+*/
+
+//23
+/*int m,v=0,s=0;
+cout <<"masofa: ";cin >>m;
+// kilometr metrga o'tkazish
+    v=m*1000;
+
+  int  h=360;
+
+    s=v/h;
+
+
+cout<<"Tezlik "<<s<<endl;
+*/
+
+//24
+
+/*int a=1,b=1;
+cout<<"hafta soni; ";cin>>a;
+cout<<"sutka soni; ";cin>>b;
+
+b=b*24;
+a=7*24*a;
+
+cout<<"Natija "<<a+b<<endl;
+*/
+
+/*
+ //25
+int a;
+
+cout<<"sonni kiriting: ";cin>>a;
+
+   cout<<a*1024*1024<<" kilobayt/sekund";
+*/
+
+//26
+
+/*int s;
+cout <<"sekund kiriting: ";
+cin>>s;
+cout<<(s/3600.0)<<" soat";
+*/
+
+//27
+/*int n;
+cout<<"sekundda son kiriting; ";cin>>n;
+int sekund=n%60;
+int min=n/60%60;
+int soat=n/3600%24;
+
+cout<<soat<<" soat "<<min<<" minut "<<sekund<<" sekund\n";
+ */
+
+    //30
+/*int n;
+cout <<"n ;";
+cin >>n;
+int b=n*1024/2;
+cout <<b<<" ta belgi ";
+*/
+
+//32
+/*int n;
+cout <<"n. ";
+cin>>n;
+
+if(n>999 && n<10000){
+for(i=1;i<=)
+}*/
+
+
+/*
+ //25
+int a;
+
+cout<<"sonni kiriting: ";cin>>a;
+
+   cout<<a*1024*1024<<" kilobayt/sekund";
+*/
+
+//26
+
+/*int s;
+cout <<"sekund kiriting: ";
+cin>>s;
+cout<<(s/3600.0)<<" soat";
+*/
+
+//27
+/*int n;
+cout<<"sekundda son kiriting; ";cin>>n;
+int sekund=n%60;
+int min=n/60%60;
+int soat=n/3600%24;
+
+cout<<soat<<" soat "<<min<<" minut "<<sekund<<" sekund\n";
+ */
+
+    //30
+/*int n;
+cout <<"n ;";
+cin >>n;
+int b=n*1024/2;
+cout <<b<<" ta belgi ";
+*/
+
+//32
+/*int n;
+cout <<"n. ";
+cin>>n;
+
+if(n>999 && n<10000){
+for(i=1;i<=)
+}*/
+
+
+
+//36
+/*int a,b,c;
+cout <<"a: ";cin>>a;
+cout <<"b: ";cin>>b;
+cout <<"c: ";cin>>c;
+if(a==b &&b==c && a==c){cout<<"=";}
+ else if(a==b){cout<<c;
+ if(a==c){cout<<b;}
+    if(c==b){cout<<a;}}
+   else {cout<<" a; "<<a<<" b; "<<b<<" c; "<<c;}
+      main();
+  */
+
+//37
+/*int a,b;
+cout <<"a: ";cin>>a;
+cout <<"b: ";cin>>b;
+int n=a+b;
+if(n>9 &&n<20){ cout<<"natija "<<20<<endl;}
+else
+cout<<"natija "<<n<<endl;
+main();
+  */
+
+//38
+    /* int a;
+     cout <<"a: ";cin>>a;
+
+
+     if(a>999 && a<10000){
+         int r1=a%10;
+         int r1000=a/1000%10;
+         if(r1==3 || r1000==3){cout<<"tegishli soha";}
+         else {cout<<"tegishli emas";}}
+ }*/
+
+///39
+    /* int main()
+     {
+         int n;cout <<"n: ";cin>>n;
+         if(n>0){cout<<"NATIAJ "<<n*15;}
+         else if(n<0){cout<<"NATIAJ "<<abs(n);
+         } else {cout<<"NATIAJ "<<0;}*/
+
+
+
+
+
+    //41
+    /*  int a,b,c;
+      cout<<"a: ";cin>>a;
+       cout<<"b: ";cin>>b;
+       cout<<"c: ";cin>>c;
+       bool bu= true;
+       if (abs(a-b)>=10 || abs(a-c)>=10 ||abs(b-c)>=10 ){
+           bu= true;
+       }else{bu= false;}
+       cout<<boolalpha<<bu<<endl;*/
+
+
+//42
+/*int a,b;
+cout<<"a: ";cin>>a;
+
+    cout<<"b: ";cin>>b;
+    bool buy=0;
+if(a>2 && b<3){buy=1;
+cout<<buy<<endl;}
+else {cout<<buy<<endl;}
+main();
+*/
+
+
+//43
+
+/*int a,b,c;
+cout<<"a: ";cin>>a;
+    cout<<"b: ";cin>>b;
+    cout<<"c: ";cin>>c;
+    if(a>0 && b>0 && c>0){ cout<<"Berligan sonlarning 3 tasi musbat\n";}
+    else if(a>0 && b>0 ||a>0 && c>0||b>0 &&c>0){cout<<"Sonlarning 2 tasi mus\n";}
+else{cout<<"ERROR\n";}
+*/
+
+///44
+/*int a;
+    cout<<"a: ";cin>>a;
+   int  r1=a%10;
+    int r10=a/10%10;
+    int r100=a/100%10;
+    bool b=0;
+    if(r10-r100==1 && r1-r10==1){
+b=1;
+}else{b=0;}
+    cout<<boolalpha<<b<<endl;*/
+
+///45
+
+    /*  int a;
+      cout<<"a: ";cin>>a;
+      int  r1=a%10;
+      int r10=a/10%10;
+      int r100=a/100%10;
+      bool b=0;
+      if(r10-r100==1 && r1-r10==1||r100-r10==1 &&r10-r1==1){
+          b=1;
+      }else{b=0;}
+      cout<<boolalpha<<b<<endl;*/
+
+    ///46
+    /*int n;
+    cout<<"N: ";cin>>n;
+    int r1=n%10;
+      int r10=n/10%10;
+      int r100=n/100%10;
+      cout<<"MAX "<<max(max(r10,r100),r1)<<endl;
+  */
+
+    ///47
+    /*int n;
+    cout<<"Yosingizni kiriting: ";cin>>n;
+    string str;
+    if (n>=10&&n<=60){
+        int r10=n/10%10;
+        int r1=n%10;
+        switch (r10) {
+            case 1:str+=" o'n ";
+                break;
+            case 2:str+=" yigirma ";
+                break;
+            case 3:str+=" o'ttiz ";
+                break;
+            case 4:str+=" qirq ";
+                break;
+            case 5:str+=" ellik ";
+                break;
+            case 6:str+=" oltmish ";
+                break;
+            default:
+                str+=" bu yosh kerak emas ";
+                break;
+
+        }
+
+        switch (r1) {
+              case 1:str+=" bir ";
+                  break;
+              case 2:str+=" ikki ";
+                  break;
+              case 3:str+=" uch ";
+                  break;
+              case 4:str+=" tort ";
+                  break;
+              case 5:str+=" besh ";
+                  break;
+              case 6:str+=" olti ";
+                  break;
+              case 7:str+=" yett ";
+                  break;
+              case 8:str+=" sakkiz ";
+                  break;
+              case 9:str+=" toqqiz ";
+                  break;
+
+
+          }
+  cout<<str;
+
+      }*/
+
+    ///48
+    /*int a,b,c;
+      cout<<"a: ";cin>>a;
+      cout<<"b: ";cin>>b;
+      cout<<"c: ";cin>>c;
+  if(a>0 && b>0 && c<0){ cout<<"a+b= "<<a+b;}
+     else if(a>0 && c>0 && b<0){ cout<<"a+c= "<<a+c;}
+     else if(c>0 && b>0 && a<0){ cout<<"c+b= "<<c+b;}
+      else{ cout<<"a*b*c= "<<a*b*c;}*/
+
+
+    ///49
+/*    int a, b, c, d;
+    cout << "a: ";
+    cin >> a;
+    cout << "b: ";
+    cin >> b;
+    cout << "c: ";
+    cin >> c;
+    cout << "d: ";
+    cin >> d;
+    if (a == b && b == c && c == d) { cout << "a+b+c+d= " << a * 4; }
+    else { cout << "max - min = " << max(max(a, b), max(c, d)) - min(min(a, b), min(c, d)) << endl; }
+*/
+
+///50
+    /* int a, b, c;
+     cout << "a: ";
+     cin >> a;
+     cout << "b: ";
+     cin >> b;
+     cout << "c: ";
+     cin >> c;
+
+     if (a == b && b == c) { cout << "a+b+c= " << 0; }
+     else if(a == b && c!=a){ cout<<"c: "<<c;}
+     else if(a == c && b!=a){ cout<<"c: "<<c;}
+     else if(c == b && c!=a){ cout<<"c: "<<c;}
+    else if(a != b && b != c && c != d){cout<<"a*b*c= "<<a*b*c;}
+ */
+    ///53
+
+    /*  int a, b, c;
+      cout << "a: ";
+      cin >> a;
+      cout << "b: ";
+      cin >> b;
+      cout << "c: ";
+      cin >> c;
+  bool v=1;
+      if (a + b==c ) {cout << boolalpha<<v;}
+       else if (a + c==b ) {cout << boolalpha<<v; }
+      else if (c + b==a ) {cout << boolalpha<<v; }
+      else{v=0;cout << boolalpha<<v; }*/
+
+/// 79,80,81,82
+    ///83,84
+
+
+
+    ///85
+/*int sana=0;
+    for (int i = 100; i < 1000; ++i) {
+
+                if(i%3==0 && i%5==0){
+              sana++;  }
+
+
+        }
+    cout <<"3 ga va 5 ga bolindigan sonlar: "<< sana << " \n";
+*/
+
+///86
+
+///87
+/*int n;
+cout<<"konfet narxi: ";cin>>n;
+    for (float i = 1.1; i <2.1 ; i+=0.1) {
+        cout<<i<<" kg "<<i*n<<" So'm\n";
+    }  */
+
+
+///88
+    /* int n;
+     cout<<"konfet narxi: ";cin>>n;
+     for (float i = 0; i <n ; i++) {
+         cout<<"√"<<i<<" dan  "<<sqrt(i)<<" ga teng\n";
+     }*/
+
+    ///89
+    /* int a,b,k=1;
+     cout<<"A soni: ";cin>>a;
+     cout<<"B soni: ";cin>>b;
+     for (int i = a; i <=b ; i++) {
+         k*=i;
+     }
+    cout<<"Ko'paytmasi: "<<k<<endl;
+
+ */
+    ///90
+    /* int n;
+     cout<<"konfet narxi: ";cin>>n;
+     for (float i = 0.1; i <1.001 ; i+=0.1) {
+         cout<<i<<" kg  "<<i*n<<" ga teng\n";
+     }
+ */
+
+
+    ///91
+    /* int n,sana=0;
+     cout<<"son: ";cin>>n;
+      while (n>0){
+         int k= n%10;
+         sana++;
+      k++;
+      n/10;
+      }*/
+
+
+    ///92       chala
+
+    /*  int a, b;
+      cout << "A soni: ";
+      cin >> a;
+      cout << "B soni: ";
+      cin >> b;
+      for (int i = a; i <= b; ++i) {
+          for (int j = a; j <= i; ++j) {
+              cout <<i << " ";
+          }
+      }   */
+
+///93
+    /* int a, b;
+     cout << "A soni: ";
+     cin >> a;
+     cout << "B soni: ";
+     cin >> b;
+
+     for (int i = 1; i <= b; ++i) {
+         cout << a << " ";
+
+     }     */
+
+    ///95
+    /*float n,k=1;
+    cout << "A soni: ";
+    cin >> n;
+ for (float i = 1.1; i <=n+0.0001; i+=0.1) {
+         k*=i;
+
+
+ }     cout<<k;
+
+       */
+
+
+
+    ///96
+    /*int n=1,sana=0;
+   for (int i = n; n >0 ; ++i) {
+     cout<<"N: ";cin>>n;
+
+     if(n%5==0){sana++;}
+
+   }      cout<<sana;
+        */
+
+    ///97
+    /*   int n,sana=0;
+       cout<<"N: ";cin>>n;
+       int i=0;
+      while (n>0){
+         int k= n%10;
+          k+=k
+                  */
+
+///98
+/*int n,sana=0;
+bool b=0;
+for (int i = 0; i < 5; ++i) {
+        cout << "n: ";
+        cin >> n;
+        if (n == 5) { sana++; b=1; }
+
+    }
+    cout<<boolalpha<<b<<" "<<sana<<" ta";
+       */
+
+///99,100
+
+    ///101
+    /*int n, sana = 0;
+    bool b = 0;
+    for (int i = 0; i < 5; ++i) {
+        cout << "n: ";
+        cin >> n;
+        if (n%2==0) {
+            sana++;
+            b = 1;
+        }
+
+    }
+    cout << boolalpha << b << " " << sana << " ta";   */
+
+    ///102
+/*float n,j=0,i=0;
+   cout<<"Son: ";
+ cin>>n;
+    for ( i = 1; i <n; ++i) {
+        for ( j = 1; j <=n ; ++j) {
+          if(i>=j){  cout<<i<<" ";}
+          else{cout<<"  ";}
+
+        }
+        cout<<endl;
+    }
+    for (int k = 1; k <= n; ++k) {
+                     cout<<k<<" ";
+    }   */
+    ////107
+    /*  int n;
+      n=5;
+       for (int i = n; i >= 1;--i) {
+           for (int j = 1; j <= n; ++j) {
+               if (i + j == n + 1) {
+                   cout << i << " ";
+               } else { cout << " "; }
+           }
+
+       }   cout << endl;   */
+
+
+    ///108,109,110,111,112,
+
+    ///117
+    /* int n;
+  //    cout<<"N: ";
+  //    cin>>n;
+      n=5;
+      for (int i = n+1; i > 0; --i) {
+          for (int j = 1; j <= n; ++j) {
+              if (i+j<=n+1) { cout << i << ""; }
+              else { cout << " "; }
+          }
+          cout << endl;
+      }        */
+
+    ///123
+    /* int a,b,ekub=0;
+     cout<<"a: ";cin>>a;
+     cout<<"b: ";cin>>b;
+      for (int i = 1; i <= min(a,b); ++i) {
+          if(a%i==0 && b%i==0){ekub=i;}
+
+      }cout<<"Ekub: "<<ekub<<endl;
+
+            */
+    ////111
+     int i = 1;
+    while (i <= 9) {
+       int j = 1;
+        while (j <= 10) {
+            cout << i << " * " << j << " = " << i * j << endl;
+            ++j;
+        }
+        i+=2;
+        cout<<endl;
+       
+    }
+
+
+}

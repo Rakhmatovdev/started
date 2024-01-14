@@ -1,0 +1,713 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+#include <ctime>
+
+using namespace std;
+
+/*1
+  #include <iostream>
+using namespace std;
+  string numstr(int a){
+      int a10=a/10%10;
+      int a1=a%10;
+      string str;
+      switch (a10){
+          case 1:
+              str+="O'n";
+              break;
+          case 2:
+              str+="Yigirma";
+              break;
+          case 3:
+              str+="Ottiz";
+              break;
+          case 4:
+              str+="Qirq";
+              break;
+          case 5:
+              str+="Ellik";
+              break;
+          case 6:
+              str+="Oltmish";
+              break;
+          case 7:
+              str+="Yetmish";
+              break;
+          case 8:
+              str+="Sakson";
+              break;
+          case 9:
+              str+="To'qson";
+              break;
+      }
+      switch (a1){
+          case 1:
+              str+=" bir ";
+              break;
+          case 2:
+              str+=" ikki ";
+              break;
+          case 3:
+              str+=" uch ";
+              break;
+          case 4:
+              str+=" to'rt ";
+              break;
+          case 5:
+              str+=" besh ";
+              break;
+          case 6:
+              str+=" olti ";
+              break;
+          case 7:
+              str+=" yetti ";
+              break;
+          case 8:
+              str+=" sakkiz ";
+              break;
+          case 9:
+              str+=" to'qqiz ";
+              break;
+
+      } return str;
+  }
+  int main(){
+      int n;
+      cout << "1 dan 99 gacha son kiriting\n";
+      cout<<"n son kiritng; ";
+      cin>>n;
+      cout<<numstr(n)<<endl;
+      main();
+  }*/
+
+///2 masala
+/*#include<iostream>
+using namespace std;
+
+void nums(int a){
+    int sum=0;
+    for(int i=0;i<100;i++){
+        if(i%3==0 && i%5!=0){sum+=i;}
+
+
+    }cout<<endl<<sum<<endl;
+}
+int main(){
+    nums(2);
+
+}*/
+
+///3 masala
+/*int bittafarq(){
+    for (int i = 10; i <100 ; ++i) {
+        int r1=i%10;
+        int r10=i/10%10;
+        if (r10-r1=1||r10-r1=-1){}
+
+    }
+
+}
+
+int main(){
+
+
+}*/
+
+
+///4
+
+
+
+
+
+
+
+///27
+
+/*void ekub(int a,int b) {
+    int ekub, i = 1;
+    while (i <= min(a, b)) {
+        if (a % i == 0 && b % i == 0) {
+            ekub =i;
+        }++i;
+    }cout<< ekub;
+}
+int main(){
+    int a,b;
+    cout<<"a: ";
+    cin>>a;
+    cout<<"b: ";
+    cin>>b;
+    ekub(a,b);
+}*/
+
+///28
+/*void n(int n){
+    for (int i = 0; i <n ; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if(i==0 ||j==0||i==n-1||j==n-1){
+                cout<<"% ";
+            }else cout<<"  ";
+
+
+        } cout<<endl;
+    }
+}
+int main(){
+   n(4);
+}*/
+
+///29 a ning n topadigan funklsiya
+
+
+///70 masala
+/* int sizeA,maX=INT_MIN,miN=INT_MAX;
+   cout << "size a: ";
+   cin >> sizeA;
+   int a[sizeA];
+   for (int i = 0; i < sizeA; ++i) {
+       cout << i << "-index: ";
+       cin >> a[i];
+      if( maX<a[i])
+       maX=a[i];
+       if ( miN>a[i])
+       miN=a[i];
+   }
+   cout<<maX<<" - "<<miN<<" = "<<maX-miN;*/
+
+////
+/*string func(string s1,string s2,int n,int k) {
+    int k = s1.find(s2);
+    s1.erase(k, s2.size());
+
+    return s1;
+}
+int main() {
+    int n,k;
+
+    string s1,s2;
+    cout<<"s1: ";
+    getline(cin,s1);
+    cout<<"s2: ";
+    getline(cin,s2);
+    cout<<"n: ";
+    cin>>n;
+    cout<<"k: ";
+    cin>>k;
+    cout<<func(s1,s2,n,k);
+
+
+}*/
+///72
+/*#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int sum67(vector<int> nums) {
+    int sum = 0;
+    bool flag = false; // flag variable to check if we are inside the 6-7 sequence
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] == 6) {
+            flag = true; // set flag to true
+        } else if (nums[i] == 7 && flag) {
+            flag = false; // reset flag to false
+        } else if (!flag) { // add element to sum only if we are not in the 6-7 sequence
+            sum += nums[i];
+        }
+    }
+    return sum;
+}
+
+int main() {
+    cout << sum67({1, 2, 2}) << endl; // expected output: 5
+    cout << sum67({1, 2, 2, 6, 99, 99, 7}) << endl; // expected output: 5
+    cout << sum67({1, 1, 6, 7, 2}) << endl; // expected output: 4
+    cout << sum67({2, 7, 6, 2, 6, 7, 2, 7}) << endl; // expected output:18
+    return 0;
+}*/
+/*///tokror kod
+#include <vector>
+
+int sum2(vector<int> nums ){
+    int sum=0;
+    bool flag;
+
+    for (int i = 0; i <nums.size(); ++i) {
+    if (nums[i]==6){
+        flag= true;
+    }else
+        if (nums[i]==7 && flag){
+            flag= false;
+        }else
+        if (!flag){
+            sum+=nums[i];
+        }
+    }return sum;
+}
+int main(){
+ cout<<sum2({1,2,3,5,6,55435,44534,7,7});
+}*/
+
+///80
+/*#include <iostream>
+using namespace std;
+
+int matchUp(int a[], int b[], int n) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (abs(a[i] - b[i]) == 1 || abs(a[i] - b[i]) == 2) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    int n;
+    cout << "Enter the size of the arrays: ";
+    cin >> n;
+
+    int a[n], b[n];
+    cout << "Enter the elements of array a: ";
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+
+    cout << "Enter the elements of array b: ";
+    for (int i = 0; i < n; i++) {
+        cin >> b[i];
+    }
+
+    int result = matchUp(a, b, n);
+    cout << "The number of elements that differ by 1 or 2 in arrays a and b is: " << result << endl;
+
+    return 0;
+}
+*/
+
+/*///takroki
+int match(int a[], int b[], int n) {
+    int counter = 0;
+    for (int i = 0; i < n; ++i) {
+        if (abs(a[i] - b[i] )== 1 || abs(a[i] - b[i] )== 2) {
+            counter++;
+        }
+    }
+    return counter;
+}
+int main() {
+    int n;
+    cin >> n;
+    int a[n];
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
+    }
+    int b[n];
+    for (int i = 0; i < n; ++i) {
+        cin >> b[i];
+    }
+   int result = match(a, b, n);
+cout<<result;
+}
+*/
+///85
+/*#include <iostream>
+#include <vector>
+using namespace std;
+
+bool sameEnds(vector<int> nums, int n) {
+    int size = nums.size();
+    for (int i = 0; i < n; i++) {
+        if (nums[i] != size-n+i) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    vector<int> nums = {5, 6, 45, 99, 13, 5, 6};
+
+    cout << sameEnds(nums, 0) << endl;
+    cout << sameEnds(nums, 1) << endl;
+    cout << sameEnds(nums, 2) << endl;
+    cout << sameEnds(nums, 3) << endl;
+
+    return 0;
+}*/
+///89
+/*vector<int> tenRun(vector<int> nums) {
+    int currMultiple = -1;
+    for(int i=0; i<nums.size(); i++) {
+        if(nums[i] % 10 == 0) {
+            currMultiple = nums[i];
+        } else if(currMultiple != -1) {
+            nums[i] = currMultiple;
+        }
+    }
+    return nums;
+}
+
+int main() {
+
+
+    // Testing tenRun
+    vector<int> v1 = tenRun({2 ,10 ,3 ,4 ,20 ,5});
+    for (int i=0;i<v1.size();i++) {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl; // 2 ,10 ,10 ,10 ,20 ,20
+
+    vector<int> v2 = tenRun({10 ,1 ,20 ,2});
+    for (int i=0;i<v2.size();i++) {
+        cout<<v2[i]<<" ";
+    }
+    cout<<endl; // 10 ,10 ,20 ,20
+
+    vector<int> v3 = tenRun({10 ,1 ,9 ,20});
+    for (int i=0;i<v3.size();i++) {
+        cout<<v3[i]<<" ";
+    }
+    cout<<endl; // 10 ,10 ,10 ,20
+    return 0;
+}*/
+
+///takrork kod
+/*#include <vector>
+vector<int> tenrun(vector<int> nums){
+    int currentmult=-1;
+    for (int i = 0; i <nums.size(); ++i) {
+        if (nums[i]%10==0) currentmult=nums[i];
+        else if (currentmult!=-1)nums[i]=currentmult;
+    }
+    return nums;
+}
+int main(){
+        vector<int> v1 = tenrun({2,10,2,5,7,20,4,7,4});
+    for (int i = 0; i <v1.size() ; ++i) {
+        cout << v1[i] << " ";
+    }
+}*/
+///90
+/*include <iostream>
+#include <vector>
+using namespace std;
+vector<int> notAlone(vector<int> nums, int val) {
+    for (int i = 1; i < nums.size() - 1; i++) {
+        if (nums[i] == val && nums[i]-1 != val && nums[i]+1 != val) {
+            int maxneighbor = max(nums[i-1], nums[i+1]);
+            nums[i] = maxneighbor;
+        }
+    }
+    return nums;
+}
+
+int main() {
+
+
+    // Testing notAlone function
+    vector<int> testnums4 {1, 2, 3};
+    vector<int> result4 = notAlone(testnums4, 2);
+    for (auto x : result4) cout << x << " "; // Expected output: 1, 3, 3
+
+    cout << endl;
+
+    vector<int> testnums5 {1, 2, 3, 2, 5, 2};
+    vector<int> result5 = notAlone(testnums5, 2);
+    for (auto x : result5) cout << x << " "; // Expected output: 1, 3, 3, 5, 5, 2
+
+    cout << endl;
+
+    vector<int> testnums6 {3, 4};
+    vector<int> result6 = notAlone(testnums6, 3);
+    for (auto x : result6) cout << x << " "; // Expected output: 3 ,4
+
+    cout << endl;
+
+    vector<int> testnums7 {1 ,1 ,1 ,2};
+    vector<int> result7 = notAlone(testnums7 ,1 );
+    for(auto x :result7 )cout<<x<<" "; // Expected output: 1 ,1 ,1 ,2
+}
+*/
+
+////takror
+/*#include <vector>
+vector<int> lone(vector<int> nums,int n){
+    for (int i = 0; i <nums.size(); ++i) {
+        if(nums[i]==n && nums[i]+1!=n && nums[i]-1!=n){
+            int maxn= max(nums[i+1],nums[i-1]);
+            nums[i]=maxn;
+        }
+    }return nums;
+
+}
+int main(){
+    vector<int>test({2,4,1,2,5,3});
+    vector<int> result= lone(test,2);
+    for(auto x:result) cout<<x<<" ";
+}*/
+///91
+/*
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> withoutTen(vector<int> nums) {
+    vector<int> result(nums.size(), 0);
+    int index = 0;
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] != 10) {  // 10 sonlarini olib tashlash
+            result[index] = nums[i];
+            index++;
+        }
+    }
+
+    return result;
+}
+
+int main() {
+    vector<int> nums = {1, 10, 10, 2,4};
+    vector<int> result = withoutTen(nums);
+
+    for(auto x:result)cout<<x<<" ";
+
+    return 0;
+}
+
+*/
+
+///92
+
+
+//2. Massivdagi barcha 0 sonlarini shu 0 ni o’ng qismida uchraydigan eng katta toq son
+//     bilan almashtirish uchun quyidagi kod yoziladi:
+
+/*#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> zeroMax(vector<int> nums) {
+    int maxOdd = 0;
+    for(int i=nums.size()-1; i>=0; i--) {
+        if(nums[i] % 2 == 1 && nums[i] > maxOdd) {
+            maxOdd = nums[i];
+        }
+        if(nums[i] == 0) {
+            nums[i] = maxOdd;
+        }
+    }
+    return nums;
+}
+
+int main() {
+    vector<int> arr1 = {0, 5, 0, 3};
+    vector<int> arr2 = {0, 4, 0, 3};
+    vector<int> arr3 = {0,1,0};
+
+    vector<int> res1 = zeroMax(arr1);
+    vector<int> res2 = zeroMax(arr2);
+    vector<int> res3 = zeroMax(arr3);
+
+    for(int i=0; i<res1.size(); i++) {
+        cout << res1[i] << " ";
+    }
+
+    cout << endl;
+
+    for(int i=0; i<res2.size(); i++) {
+        cout << res2[i] << " ";
+    }
+
+    cout << endl;
+
+    for(int i=0; i<res3.size(); i++) {
+        cout << res3[i] << " ";
+    }
+
+    return(0);
+}*/
+
+///93
+/*#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> evenOdd(vector<int> nums) {
+    vector<int> result(nums.size());
+    int left = 0, right = nums.size() - 1;
+
+    for (int i = 0; i < nums.size(); i++) {
+        if (nums[i] % 2 == 0) {
+            result[left] = nums[i];
+            left++;
+        } else {
+            result[right] = nums[i];
+            right--;
+        }
+    }
+
+    return result;
+}
+
+int main() {
+    vector<int> nums = {1, 0, 1, 0, 0, 1, 1,2,1};
+    vector<int> result = evenOdd(nums);
+
+    for (int i = 0; i < result.size(); i++) {
+        cout << result[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}*/
+
+///takror code
+/*vector<int> leftrigt(vector<int> nums){
+    vector<int> result(nums.size());
+    int left=0,right=nums.size()-1;
+    for (int i = 0; i <nums.size() ; ++i) {
+        if(nums[i]%2==0){result[left]=nums[i]; left++;}
+    else {
+            result[right] = nums[i];
+right--;
+        }
+    } return result;
+}
+int main(){
+
+        vector<int> v1=leftrigt({1,2,5,6,7,5,8});
+    for(auto x:v1)cout<<x<<" ";
+
+}*/
+///95
+/*#include <iostream>
+#include <vector>
+
+using namespace std;
+
+bool canBalance(vector<int> nums) {
+    int left_sum = 0, right_sum = 0;
+
+    for (int i = 0; i < nums.size(); i++) {
+        right_sum += nums[i];  // 2-qismdagi elementlar yig'indisi
+    }
+
+    for (int i = 0; i < nums.size(); i++) {
+        left_sum += nums[i];
+        right_sum -= nums[i];
+
+        if (left_sum == right_sum) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+int main() {
+    vector<int> nums = {1, 1, 1, 2, 1};
+    bool result = canBalance(nums);
+
+    cout << std::boolalpha << result << endl;
+
+    return 0;
+}*/
+/// takror
+/*bool balanc(vector<int> nums){
+    int lefts=0,rights=0;
+    for (int i = 0; i <nums.size() ; ++i) {
+        rights+=nums[i];
+    }
+    for (int i = 0; i < nums.size(); ++i) {
+        lefts+=nums[i];
+        rights-=nums[i];
+        if(lefts==rights){
+            return true;
+        } return false;
+    }
+}
+int main(){
+
+
+}*/
+
+int main(){
+    int array[]={7,3,6,2,5};
+    int min=array[0];
+    int min1=array[1];
+    for (int i = 0; i <5 ; ++i) {
+        if (min>array[i]) min=array[i];
+    }
+    for (int i = 0; i <5 ; ++i) {
+        if (min1>array[i] && min1>min) min1=array[i];
+
+    }
+    cout<<min<<endl<<min1;
+}

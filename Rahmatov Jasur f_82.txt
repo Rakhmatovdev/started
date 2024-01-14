@@ -1,0 +1,178 @@
+B210623F8215
+
+
+Rahmatov Jasur F82
+
+
+1
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+#include <ctime>
+using namespace std;
+int main() {
+        float dollar, som;
+        float rate = 11300.00;
+        for (dollar = 10.00; dollar <= 40.00; dollar++)
+        {
+            som = dollar * rate;
+            cout << dollar << " dollar = " << som << " so'm" << endl;
+        }
+        return 0;
+    }
+
+
+2
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+#include <ctime>
+using namespace std;
+int main() {
+    int n;
+    cout << "N= ";
+    cin >> n;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (i >= j) cout << i+1 << " ";
+            else cout << "  ";
+        }
+        cout << endl;
+    }
+}
+
+3
+#include <iostream>
+#include <ctype.h>
+#include <math.h>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    int n;
+    cout << "N= ";
+    cin >> n;
+    int array[n];
+    int counter=0;
+    string out="zo'r";
+    for (int i = 0; i < n; ++i) {
+        cin >> array[i];
+    }
+
+    for (int i = 0; i < n; ++i) {
+        cout << array[i] << " ";
+    }
+    for (int i = 0; i < n; ++i) {
+
+
+        if (array[i]>0)counter++;
+    }
+    if(counter==n){ out="urra";}
+    cout<<"\nNatija: "<<out;
+}
+
+
+4
+#include <iostream>
+#include <math.h>
+#include <ctime>
+using namespace std;
+
+int main() {
+    srand(time(0));
+    int M, N;
+
+    cout << "M: ";
+    cin >> M;
+    cout << "N: ";
+    cin >> N;
+
+    int array[M][N];
+
+    for (int i = 0; i < M; ++i) {
+        for (int j = 0; j < N; ++j) {
+            array[i][j] = ::rand() % 100 + 1;
+            cout << array[i][j] << " ";
+        }
+        cout << endl;
+    }
+    int maxn = array[0][0];
+    cout << "\n\nAfter code\n";
+
+    for (int i = 0; i < M; ++i) {
+        for (int j = 0; j < N; ++j) {
+            if (array[i][j] > maxn) {
+                maxn = array[i][j];
+
+            }
+        }
+    }
+    for (int i = 0; i < M; ++i) {
+        for (int j = 0; j < N; ++j) {
+            if (array[i][j] == maxn) {
+                array[i][j] = 0;
+
+            }
+        }
+    }
+    cout<<"Max: "<<maxn<<endl<<endl;
+    for (int i = 0; i < M; ++i) {
+        for (int j = 0; j < N; ++j) {
+
+            cout << array[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+5
+#include <iostream>
+using namespace std;
+
+int countA(string str) {
+    int count = 0;
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] == 'A')count++;
+
+    }
+    return count;
+
+}
+
+int main() {
+
+    string str;
+    cout << "Satr kiriting: ";
+    getline(cin, str);
+    cout << "Natija: " << countA(str);
+}
+
+
+6
+#include <iostream>
+#include <ctype.h>
+using namespace std;
+
+string eraseA(string str) {
+    for (int i = 0; i < str.length(); ++i) {
+        if (isupper(str[i])==1) {str.erase(i,1);i--;}
+    }
+    return str;
+
+}
+
+int main() {
+
+    string str;
+    cout << "Satr kiriting: ";
+    getline(cin, str);
+    cout << "Natija: " << eraseA(str);
+}
+
+
+

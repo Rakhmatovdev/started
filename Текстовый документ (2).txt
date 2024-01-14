@@ -1,0 +1,609 @@
+ int a , b , c ;
+  cout << " a = " ;
+  cin >> a ;
+  cout << " b = " ;
+  cin >> b ;
+  cout << " c " ;
+  cin >> c ;
+  int  max = a ;
+  int min = c ;
+  
+  if ( max < b ){
+      max = b ;
+  } 
+  
+  if ( max < c ){
+      max =c ;
+  }
+  
+  if ( min > a ) {
+      min = a ;
+  }
+  
+  if ( min = b ) {
+      min = b ;
+  }
+  
+ int  midle=a+b+c-min-max ;
+  
+  cout << min << midle  <<  max ;
+  
+
+///////////////// kabisa yillika tekshirish 
+
+  
+ int a ;
+ cout << " a = " ;
+ cin >> a ;
+ 
+ 
+ if ( a % 4 == 0 && a % 100 != 0 || a % 400==0 ) {
+     cout << " kabisiya yili " ;
+ }else {
+     cout << " kabisiya yili emas " ;
+ }
+
+///////////////// sonlarni ketma ket osuvchiligini aniqlash 
+ 
+   int n , a , b , c ;
+   cout << " n = " ;
+   cin >> n ;
+   a = n % 10 ;
+   b = n / 10 % 10 ;
+   c = n / 100 % 10 ;
+   
+   if ( c-b==1 && b-a==1 || c-b==-1 && b-a==-1 ) {
+       cout << " ketma ket osuvchi " ;
+   }else {
+       cout << " ketma ketuvchi emas " ;
+   }
+///////////////// hafta kunlarini chiqarish 
+
+       int son  ;
+       cout << " son " ;
+       cin >> son ;
+      
+       if ( son == 1 ) {
+           cout << " Dushanba " ;
+       }
+       
+       else if ( son ==2 ) {
+           cout << " Seyshanba " ;
+       }
+   
+       else if ( son ==3 ) {
+           cout << " Chorshanba " ;
+       }
+       
+       else if ( son ==4 ) {
+           cout << " Payshanba " ;
+       }
+       else if ( son ==5 ) {
+           cout << " Juma " ;
+       }
+       
+       else if ( son ==6 ) {
+           cout << " Shanba " ;
+       }
+   
+     else if ( son ==7 ) {
+           cout << " Yakshanba " ;
+       }
+       
+       else {
+           cout << " bunday hafta yoq";
+     }  
+     
+
+/////////////////
+
+
+      string n ;
+      cout << " n =" ;
+      cin >> n ;   
+      
+      if ( n == "qizil" ) {
+      cout << " harakatlanishdan toxtang " ;
+          
+      }else if (  n ==  "sariq" ){
+      cout << " harakatlanishga tayyorlaning " ;
+          
+      }else if (   n =="yashil"  ){
+      cout << " harakatlanishingiz mumkun " ;
+     
+      }  else {cout << " bunday chiqo yoq " ;}
+
+
+////////////// manfiylik va musbatlikka tekshirish .
+
+int n ;
+    cout << " n = " ;
+    cin >> n ;
+    
+    string matn ;
+    
+    if ( n > 0 && n < 10) { matn +=" 1 xonali " ;}
+    else if ( n > 9& n < 100 ) { matn += " 2 xonali son " ; }
+    else if ( n > 999 && n < 1000 ) { matn += " 3 xonali son " ; }
+    else if ( n > 999 && n <10000 ) { matn += " 4 xonali son " ; }
+    
+    
+    if ( n > 0 ) { matn +=" musbat son " ; }
+    else { matn += " manfiy son " ; }
+    
+    if ( n % 2 == 0 ) { matn += " juft son " ; }
+   else { matn += " toq son " ; }
+    
+    
+    cout << matn ;
+
+////////////////// sonlarni yozuv bilan chiqrish maksimum 3 xonali sonlar 
+
+
+ int n ;
+    cout << " n = " ;
+    cin >> n ;
+    
+    int r1 = n % 10 ;
+    int r10 = n / 10 % 10 ;
+    int r100 = n / 100 % 10 ;
+    string matn ;
+    
+     if ( r100 == 1 ) { matn +=" yuz " ;}
+    else if ( r100 == 2 ) { matn += " ikki yuz " ; }
+    else if ( r100 == 3 ) { matn += " uch yuz " ; }
+    else if ( r100 == 4 ) { matn += " to'rt yuz " ; }
+    else if ( r100 == 5 ) { matn += " besh yuz " ; }
+    else if ( r100 == 6 ) { matn += " olti yuz " ; }
+    else if ( r100 == 7 ) { matn += " yetti yuz " ; }
+    else if ( r100 == 8 ) { matn += " skkiz yuz " ; }
+    else if ( r100 == 9 ) { matn += " to'qqiz yuz " ; }
+    
+    if ( r10 == 1 ) { matn +=" o'n " ;}
+    else if ( r10 == 2 ) { matn += " yigirma " ; }
+    else if ( r10 == 3 ) { matn += " o'ttiz " ; }
+    else if ( r10 == 4 ) { matn += " qiriq " ; }
+    else if ( r10 == 5 ) { matn += " ellik " ; }
+    else if ( r10 == 6 ) { matn += " oltmush " ; }
+    else if ( r10 == 7 ) { matn += " yettmush " ; }
+    else if ( r10 == 8 ) { matn += " skkson " ; }
+    else if ( r10 == 9 ) { matn += " to'qqson " ; }
+    
+    
+    
+    if ( r1 == 1 ) { matn +=" bir " ;}
+    else if ( r1 == 2 ) { matn += " ikki " ; }
+    else if ( r1 == 3 ) { matn += " uch " ; }
+    else if ( r1 == 4 ) { matn += " to'rt " ; }
+    else if ( r1 == 5 ) { matn += " besh " ; }
+    else if ( r1 == 6 ) { matn += " oltih " ; }
+    else if ( r1 == 7 ) { matn += " yetti " ; }
+    else if ( r1 == 8 ) { matn += " skkiz " ; }
+    else if ( r1 == 9 ) { matn += " to'qqiz " ; }
+    
+    cout << matn ;
+
+//////////////// hafta kunlarini chiqarish 
+
+
+  
+   int son ;
+   cout << " son kriting " ;
+   cin >> son ;
+   
+   
+   switch ( son ) {
+   
+   case 1 :
+        cout << " dushanba " ;
+        
+        break ;
+   
+   case 2 :
+        cout << " seyshanba " ;
+        
+        break ;
+        
+    case 3 :
+        cout << " chorshanba " ;
+        
+        break ;
+        
+        
+   case 4 :
+        cout << " payshanba " ;
+        
+        break ;
+   
+   case 5 :
+        cout << " juma " ;
+        
+        break ;
+        
+    case 5 :
+        cout << " shanba " ;
+        
+        break ;
+        
+    case 5 :
+        cout << " yakshanba " ;
+        
+        break ;
+        
+    default :
+        cout " bunday hafta kuni yoq " ;
+        
+        break ;
+
+//////////////
+
+
+  
+         float a  , b  ;
+         cout << " a = " ;
+         cin >> a ;
+         cout << " b = " ;
+         cin >> b ;
+         
+         cout << " Menyu " << endl  ;
+         cout << " 1. Qo'shish " << endl ;
+         cout << " 2. Ayirish "  << endl ;
+         cout << " 3.Bolish "  << endl ;
+         cout << " 4. Kopaytirish "  << endl ;
+         int n ;
+         cin >> n ;
+         
+         
+        switch ( n ){
+         
+         case 1 :
+             cout << a+b ;
+             break;
+         case 2 :
+             cout << a-b ;
+             break;
+         case 3 :
+             cout << a/b ;
+             break;
+         case 4 : 
+             cout << a*b ;
+             break;
+
+///////////// saonni bita bitta oshirb borish
+
+
+int a , b ;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+    
+    while ( a <= b ) {
+        cout << a << "  " ;
+    a ++ ;
+    }
+
+
+/////////// a sondan b songacham toq sonlarni chiqarish 
+
+
+    int a , b ;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+    
+    while ( a <= b ) {
+    
+    if ( a % 2 != 0 ) {
+        cout << a << "  " ;
+    }
+        
+    a ++ ;
+    }
+
+////////////  a sondan b songacham juft sonlarni chiqarish 
+
+ int a , b ;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+    
+    while ( a <= b ) {
+    
+    if ( a % 2 == 0 ) {
+        cout << a << "  " ;
+    }
+        
+    a ++ ;
+    }
+
+////////// ketma ket osuvchi sonlarni yigindisini chiqarish 
+
+int a , b , yigindi;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+    yigindi = 0 ;
+    while ( a <= b ) {
+       
+    
+        cout << a << "  " ;
+        yigindi += a ;
+    a ++ ;
+    }
+    
+    cout << yigindi ;
+
+////////// sonlarni ketma ketlikda osib borishda juft sonlarni yigindisisni chiqarish 
+
+int a , b ,yigindi = 0  ;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+
+    while ( a <= b ) {
+    
+    if ( a % 2 == 0 ) {
+        
+        yigindi += a ;
+    }
+        
+    a ++ ;
+    }
+    
+    cout << yigindi ;
+
+///////////// for sikilida 3 ga karrali sonlarni chiqarish 
+
+ for ( int i = 1 ; i <= 100 ; i++ ) {
+  if ( i % 3 == 0 ) {
+      cout << i << endl ;
+  } 
+      
+  }
+
+////////////  for sikilida butun sonlar orasidagi sonlarni qoshish 
+
+ int a , b , yigindi =0 ;
+   cout << " a = " ;
+   cin >> a ;
+   cout << " b = " ;
+   cin >> b ;
+   
+   
+  for ( int i = a  ; i <= b ; i++ ) {
+      
+      yigindi += i;
+  
+      
+  }
+
+///////////// ekubni for sikilida topish 
+
+ int a , b , ekub ;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+    
+    for ( int i = 1 ; i <= min ( a, b ) ; i ++ ) {
+        if ( a % i == 0 && b % i == 0 ) {
+           ekub = i ;
+        }
+    }
+     cout << ekub ;
+
+//////////// ekub va ekuk ni while sikilida topish 
+
+int a , b , ekub ;
+    cout << " a = " ;
+    cin >> a ;
+    cout << " b = " ;
+    cin >> b ;
+    int i = 1
+    
+    while ( i <= min ( a, b )) {
+        if ( a % i == 0 && b % i == 0 ) {
+           ekub = i ;
+        }i ++
+    }
+     cout <<" ekub " << ekub ;
+     cout <<" ekuk " << a*b/ekub ;
+
+
+
+///////////////// for sikilida kanfet narxini topish 
+
+ 
+    int a ;
+    cout << " a = " ;
+    cin >> a ;
+    
+    
+    for ( float i = 0.1 ; i <= 1.1 ; i+=0.1) {
+        cout << i*a << endl ;
+    }
+
+/////////////// for sikilida continun operatirini ishlatish 
+
+for ( int i = 1 ; i <= 100 ; i++) {
+        if ( i % 2 ==0 ) {
+            continue ;
+        }
+        cout << i << endl ;
+
+    }
+
+//////////////  s=1+1/2+1/3.....1/n
+
+ float n , k=1 ,s=0 ;
+    cout << " n = " ;
+    cin >> n ;
+    
+    
+    
+    for ( int i = 1 ; i <= n ; i++) {
+        
+      s+=k/i ;
+        }cout << s << endl ;
+  
+///////////// nechta toq va nechta juftlikni topish formulasi .
+
+ int a ,  toqSon = 0 , juftSon = 0 ;
+    cout << " a = " ;
+    cin >> a ;
+
+    while ( a > 0 ) {
+        int r = a % 10 ;
+        if ( r % 2 != 0 ) {
+            ++ toqSon ;
+        } else if ( r % 2 == 0 ) {
+            ++ juftSon ;
+        } a /= 10 ;
+
+//////////////  5 ga 5 kvadratida N chiqarish 
+
+   int n = 5;
+        for(int i = 0;i < n;i++){
+            for (int j = 0; j < n; ++j){
+                if (i==j || j == 0 || j == n -1 ){cout <<"* ";}
+                else {cout <<". ";}
+            }
+            cout <<endl;
+        }
+
+///////////// aylanani radyusini topish ;
+
+int l ;
+cout << " l = " ;
+cin >> l ;
+
+double R = l / 2 * 3.14 ;
+cout << R ;
+
+///////////  katta harf nechta kichik harf nechta raqam nechtaligini tekshirish ;
+
+
+    string word ;
+    cout << " soz kritingm " ;
+    cin >> word ;
+
+    int count  = 0 ;
+    int katta_harf = 0 ;
+    int kichik_harf = 0 ;
+
+    for ( int i = 0 ; i < word.length (); ++i  ){
+        if (isalnum(word[i]) == 4 ){
+            count++ ;
+        }   else if ( isalnum ( word [i])== 1 ){
+            katta_harf++ ;
+        } else if ( isalnum ( word [i]) == 2 ) {
+            kichik_harf ++ ;
+        }
+
+    }cout << " katta harf " << katta_harf << " kichik harf " << kichik_harf << " raqamlar " << count << endl ;
+
+
+///////////// matinda nechta joy tashlanganligini topish ;
+
+
+    string word = " ramma gvhsjw ua8hww "  ;
+
+    int tashlangan_joy  = 0 ;
+
+    for ( int i = 0 ; i < word.length (); ++i  ) {
+        if (word[i] == ' ' ) {
+            tashlangan_joy++;
+        }
+    } cout << " tashlangan probel soni " << tashlangan_joy ;
+
+
+//////////// prabel orniga nuqta qoyish ;
+
+  string str;
+    cout << "str: ";
+    getline(cin, str);
+
+    int count = 0;
+
+
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] == ' ') {
+            str [i]='.' ;
+        }
+    }
+
+    cout << str << endl; 
+
+
+//////////// sozdagi unli harflarni topish ;
+
+
+ string str;
+    cout << "str: ";
+    getline(cin, str);
+
+    int count = 0;
+
+
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] =='a'||str[i]=='i'||str[i]=='o'||str[i] == 'u'||str[i] == 'e' ) {
+            str [i]='*' ;
+        }
+    }
+
+    cout << str << endl;
+
+
+///////// foydalanuvchi domonidan kritilgan soni kvadratini topish 
+
+
+ int a , kopaytma ;
+    cout << " a = " ;
+    cin >> a ;
+
+     (kopaytma=a*a  ) ;
+
+
+        cout << kopaytma ;
+
+///////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+         
